@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | North West Shell Fish Ltd</title>
+  <meta name="description" content="Learn about North West Shell Fish Ltd — our story, mission, and commitment to sustainable aquaculture." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">North West Shell Fish Ltd</a>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">Our Story</a></li>
+          <li><a href="research.html">Research Facilities</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content text-center">
+          <h1>Our Story</h1>
+          <p>North West Shell Fish Ltd — rooted in tradition, driven by sustainable aquaculture.</p>
+          <div class="cta-group">
+            <a class="btn" href="#mission">Our Mission</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="rte-video" class="wrap text-center">
+        <h2>As Seen on RTE One</h2>
+        <p>Watch Jerry Gallagher dive for scallops — 
+           showcasing Donegal’s authentic seafood heritage.</p>
+
+        <video controls width="720" poster="images/scallops.jpg">
+          <source src="images/rte-one.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+
+
+    <!-- About Sections with Images -->
+    <section id="mission" class="wrap">
+
+        <div class="about-block">
+        <div class="about-text">
+          <h3>From the Founder</h3>
+          <p><strong>North West Shellfish Ltd</strong> was formed in 1992 with a view to producing scallops in aquaculture licensed sites in Mulroy Bay. We have done that very successfully ever since, collecting the spat from the wild in artificial collectors, growing them through a nursery stage in suspended culture for two years using trays and lantern nets, and then placing them on the seabed for growout.</p>
+
+          <p>This is all done in a sustainable, environmentally friendly way, and we dive-harvest them to avoid disturbing the seabed.</p>
+
+          <p>In 2019, we were granted aquaculture licenses to produce 13 seaweed species and 10 shellfish species. Since then, we’ve engaged in seaweed production and native oyster cultivation.</p>
+
+          <p>We operate within an Integrated Multi-Trophic Aquaculture (IMTA) system, which improves both our local marine environment and contributes positively to the global ecosystem.</p>
+
+          <p>We are currently developing a marine hatchery to secure reliable seed supply for multiple shellfish and seaweed species, and to support other producers.</p>
+
+          <p>Over the years, we’ve partnered in many domestic and international projects, and we remain committed to collaborating with others to advance aquaculture across Europe and beyond.</p>
+
+          <p class="signature">— <em>Jerry Gallagher</em>, Founder</p>
+        </div>
+
+        <div class="about-image">
+          <img src="images/owner.jpg" alt="Jerry Gallagher, Founder of North West Shellfish Ltd" />
+        </div>
+      </div>
+
+
+      <div class="about-block">
+        <div class="about-text">
+          <h3>Commitment to Sustainability</h3>
+          <p>We work closely with local fisheries and communities to ensure every oyster, clam, and mussel meets the highest standards of flavor and freshness. Protecting marine ecosystems while supporting livelihoods is at the heart of what we do</p>
+        </div>
+        <div class="about-image">
+          <img src="images/mulroyBay.png" alt="Farming infrastructure at Creamhghort" />
+        </div>
+      </div>
+
+      <div class="about-block">
+        <div class="about-text">
+          <h3>Tradition Meets Innovation</h3>
+          <p>Our heritage in Donegal’s coastal communities runs deep. By blending traditional practices with modern aquaculture techniques, we deliver seafood that is both culturally grounded and globally respected..</p>
+        </div>
+        <div class="about-image">
+          <img src="images/mulroy-bay-clear.jpg" alt="Mulroy Bay ecosystem" />
+        </div>
+      </div>
+
+      <div class="about-block">
+        <div class="about-text">
+          <h3>Trusted Worldwide</h3>
+          <p>Whether you’re a restaurant seeking premium shellfish or a customer who values responsibly sourced seafood, North West Shell Fish Ltd is proud to serve you with integrity, care, and a taste of the ocean at its best.</p>
+        </div>
+        <div class="about-image">
+          <img src="images/fishing-crew.jpg" alt="Fishing crew preparing vessel" />
+        </div>
+      </div>
+
+    </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap text-center">
+      <p><em>“Sustainably harvested from Donegal’s pristine waters — trusted worldwide.”</em></p>
+      <p><strong>North West Shell Fish Ltd</strong> · Upper Carrick, Carrigart, Co Donegal F92 C2C2, Ireland</p>
+      <p>📧 info@sustainableaquaculture.ie · 📞 +353 868092246 📍 Donegal, Ireland</p>
+      <small>© <span id="year"></span> North West Shell Fish Ltd · <a href="/privacy">Privacy Policy</a></small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
